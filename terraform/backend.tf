@@ -3,9 +3,9 @@
 # Each workspace stores its state under: env:/<workspace>/movie-analyst/terraform.tfstate
 terraform {
   backend "s3" {
-    bucket       = "movie-analyst-tfstate-juang-2026"
+    bucket       = "movie-analyst-tfstate-965545805070"
     key          = "movie-analyst/terraform.tfstate"
-    region       = "us-east-2"
+    region       = "us-east-1"
     encrypt      = true
     use_lockfile = true # native S3 locking (Terraform >= 1.10), no DynamoDB table needed
   }

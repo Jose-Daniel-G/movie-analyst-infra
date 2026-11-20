@@ -110,6 +110,10 @@ resource "aws_instance" "nat" {
     http_tokens = "required"
   }
 
+  credit_specification {
+    cpu_credits = "standard"
+  }
+
   root_block_device {
     volume_size = 8
     volume_type = "gp3"

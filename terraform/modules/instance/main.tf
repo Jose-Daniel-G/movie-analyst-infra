@@ -22,6 +22,10 @@ resource "aws_instance" "this" {
     Name = var.name
     Role = var.role # Ansible's dynamic inventory groups hosts by this tag
   }
+
+  credit_specification {
+    cpu_credits = "standard"
+  }
 }
 
 resource "aws_eip" "this" {
