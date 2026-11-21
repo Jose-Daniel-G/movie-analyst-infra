@@ -8,6 +8,6 @@ nodejs_packages:
   - nodejs20-npm
 
 # Application source: your fork of devops-rampup (both components live in one repo)
-app_repo_url: https://github.com/juandgo/devops-rampup.git
-app_repo_version: master
+app_repo_url: https://github.com/Jose-Daniel-G/devops-rampup.git
+app_repo_version: main
 app_src_dir: /opt/devops-rampup

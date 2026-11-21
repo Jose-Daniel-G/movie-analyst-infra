@@ -72,5 +72,5 @@ app-fixes.patch   fixes for the application code (see "Application fixes")
 
 - `terraform plan/apply` (no AWS access here). Package names `nodejs20` / `nodejs20-npm` and the `amazon.aws.aws_ssm` lookup
   name depend on Amazon Linux 2023 / collection versions; adjust `nodejs_packages` or use `amazon.aws.ssm_parameter` if they fail.
-- Region is `us-east-1` in `backend.tf`, `variables.tf`, `group_vars/all.yml` and the inventories; change all four together.
+- Region is `us-east-2` in `backend.tf`, `variables.tf`, `group_vars/all.yml` and the inventories; change all four together.
 #
